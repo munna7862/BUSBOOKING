@@ -26,6 +26,7 @@ import {Browser} from '../../src/util/Browser'
     let loginBtn:WebElement = await driver.findElement(By.id("btnLogin"));
 
     await loginBtn.click();
-    await driver.close();
+    //
+    //await driver.close();
 })();
 
