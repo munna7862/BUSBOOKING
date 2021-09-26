@@ -18,9 +18,11 @@ import {Browser} from '../../src/util/Browser'
         console.log("Entered data in all data fields");
     });
     //logs
+    //button
     let loginBtn:WebElement = await driver.findElement(By.id("btnLogin"));
     //login
     await loginBtn.click();
     await driver.close();
+    //done
 })();
 
