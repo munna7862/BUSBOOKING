@@ -8,6 +8,7 @@ import {Browser} from '../../src/util/Browser'
     await driver.get("https://opensource-demo.orangehrmlive.com/");
     let title:string = await driver.getTitle();
     console.log("opened page title is"+ title);
+    
     await Promise.all([
         driver.findElement(By.id("txtUsername")).sendKeys("Admin"),
         driver.findElement(By.id("txtPassword")).sendKeys("admin123")
