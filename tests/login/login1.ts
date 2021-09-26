@@ -23,6 +23,5 @@ import {Browser} from '../../src/util/Browser'
     //login
     await loginBtn.click();
     await driver.close();
-    //done
 })();
 
