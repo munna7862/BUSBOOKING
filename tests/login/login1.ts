@@ -8,11 +8,8 @@ import {Browser} from '../../src/util/Browser'
     let driver:WebDriver = await Browser.getDriver("edge");
     //let driver:WebDriver = await new Builder().forBrowser("chrome").build();
     await driver.manage().window().maximize();
-
     await driver.manage().setTimeouts({implicit:10000,pageLoad:20000});
-    
     await driver.get("https://opensource-demo.orangehrmlive.com/");
-    
     let title:string = await driver.getTitle();
     console.log("opened page title is"+ title);
 
@@ -22,7 +19,7 @@ import {Browser} from '../../src/util/Browser'
     ]).then(function(){
         console.log("Entered data in all data fields");
     });
-
+//Login Button
     let loginBtn:WebElement = await driver.findElement(By.id("btnLogin"));
     await loginBtn.click();
 //closing the driver
