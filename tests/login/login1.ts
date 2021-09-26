@@ -19,7 +19,7 @@ import {Browser} from '../../src/util/Browser'
     ]).then(function(){
         console.log("Entered data in all data fields");
     });
-
+    
     let loginBtn:WebElement = await driver.findElement(By.id("btnLogin"));
     await loginBtn.click();
  
