@@ -1,10 +1,7 @@
-//https://www.tsrtconline.in/oprs-web/
-
 import {Builder, By, WebDriver, WebElement} from 'selenium-webdriver'
 import {Browser} from '../../src/util/Browser'
 
 (async function () {
-
     let driver:WebDriver = await Browser.getDriver("chrome");
     await driver.manage().window().maximize();
     await driver.manage().setTimeouts({implicit:10000,pageLoad:20000});
@@ -17,12 +14,8 @@ import {Browser} from '../../src/util/Browser'
     ]).then(function(){
         console.log("Entered data in all data fields");
     });
-    //logs
-    //button
     let loginBtn:WebElement = await driver.findElement(By.id("btnLogin"));
-    //login
     await loginBtn.click();
     await driver.close();
-    //done
 })();
 
