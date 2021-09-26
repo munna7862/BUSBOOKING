@@ -5,8 +5,7 @@ import {Browser} from '../../src/util/Browser'
 
 (async function () {
 
-    let driver:WebDriver = await Browser.getDriver("edge");
-    //let driver:WebDriver = await new Builder().forBrowser("chrome").build();
+    let driver:WebDriver = await Browser.getDriver("chrome");
     await driver.manage().window().maximize();
     await driver.manage().setTimeouts({implicit:10000,pageLoad:20000});
     await driver.get("https://opensource-demo.orangehrmlive.com/");
@@ -22,7 +21,7 @@ import {Browser} from '../../src/util/Browser'
     
     let loginBtn:WebElement = await driver.findElement(By.id("btnLogin"));
     await loginBtn.click();
- 
+//driver change    
     await driver.close();
 })();
 
