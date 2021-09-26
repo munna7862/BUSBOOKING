@@ -1,6 +1,5 @@
 import {Builder, By, WebDriver, WebElement} from 'selenium-webdriver'
 import {Browser} from '../../src/util/Browser'
-
 (async function () {
     let driver:WebDriver = await Browser.getDriver("chrome");
     await driver.manage().window().maximize();
