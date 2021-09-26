@@ -76,6 +76,9 @@ var Browser_1 = require("../../src/util/Browser");
                     return [4 /*yield*/, loginBtn.click()];
                 case 8:
                     _a.sent();
+                    return [4 /*yield*/, driver.close()];
+                case 9:
+                    _a.sent();
                     return [2 /*return*/];
             }
         });

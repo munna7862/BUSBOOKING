@@ -52,7 +52,7 @@ var CommonFunctions_1 = require("./../../src/util/CommonFunctions");
                 case 1: return [4 /*yield*/, _b.apply(_a, [_c + (_g.sent())])];
                 case 2:
                     _g.sent();
-                    return [4 /*yield*/, Browser_1.Browser.getDriver("chrome")];
+                    return [4 /*yield*/, Browser_1.Browser.getDriver("edge")];
                 case 3:
                     driver = _g.sent();
                     return [4 /*yield*/, driver.manage().setTimeouts({ implicit: 10000, pageLoad: 20000 })];
