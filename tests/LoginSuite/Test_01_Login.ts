@@ -35,6 +35,4 @@ describe('Test_01_Login',function(){
         await Constants.driver.quit();
         await Constants.driver.sleep(5000);
     });
-
-
 });
