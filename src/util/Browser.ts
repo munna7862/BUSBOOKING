@@ -1,8 +1,7 @@
-import { Builder, WebDriver, WebElement } from "selenium-webdriver";
-import { Driver } from "selenium-webdriver/chrome";
+import {Builder, WebDriver} from "selenium-webdriver";
 
 export class Browser{
-    public static async getDriver(strBrowser:string){
+    public static async getBrowserDriver(strBrowser:string){
         let driver:WebDriver;
         let sBrowser:string = strBrowser.toLowerCase();
 
